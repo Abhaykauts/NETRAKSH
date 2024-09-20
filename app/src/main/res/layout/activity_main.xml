@@ -7,91 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/leftguid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.08" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/rightguid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/topguid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.08" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bottomguid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.95" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/percentguid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.58" />
-
     <TextView
-        android:id="@+id/caution"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Please add atleast one room !"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="@id/leftguid"
-        app:layout_constraintTop_toTopOf="@id/topguid"
-        app:layout_constraintEnd_toEndOf="@id/rightguid"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/rooms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="rooms"
-        android:textSize="15dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="@id/leftguid"
-        app:layout_constraintTop_toBottomOf="@id/caution"
-        android:textStyle="italic"/>
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/room_recycle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/percentguid"
-        app:layout_constraintEnd_toEndOf="@id/rightguid"
-        app:layout_constraintStart_toStartOf="@id/leftguid"
-        app:layout_constraintTop_toBottomOf="@id/rooms" />
-
-    <TextView
-        android:id="@+id/devices"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="devices"
-        android:textSize="15dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="@id/leftguid"
-        app:layout_constraintTop_toBottomOf="@id/percentguid"
-        android:textStyle="italic"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/device_recycle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomguid"
-        app:layout_constraintEnd_toEndOf="@id/rightguid"
-        app:layout_constraintStart_toStartOf="@id/leftguid"
-        app:layout_constraintTop_toBottomOf="@id/devices" />
 </androidx.constraintlayout.widget.ConstraintLayout>
