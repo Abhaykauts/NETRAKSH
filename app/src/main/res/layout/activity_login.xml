@@ -216,8 +216,8 @@
         android:src="@drawable/phone_icon"
         app:layout_constraintBottom_toTopOf="@id/txt"
         app:layout_constraintEnd_toEndOf="@id/rightguid"
-        android:layout_marginBottom="10dp"
-        android:scaleType="fitXY"/>
+        android:layout_marginBottom="10dp" />
+
     <TextView
         android:id="@+id/txt"
         android:layout_width="wrap_content"
@@ -239,6 +239,5 @@
         app:layout_constraintBottom_toBottomOf="@id/bottomguid"
         android:textColor="#DB0909"
         android:clickable="true"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
